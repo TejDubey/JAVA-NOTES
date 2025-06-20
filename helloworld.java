@@ -1,5 +1,5 @@
 //finally block in java
-class helloworld{
+/*class helloworld{
     public static void main(String[] args) {
         int a=7;    
         int b=8;
@@ -18,7 +18,7 @@ class helloworld{
         }
     }
 }
-
+*/
 
 //throw and throwss in java
 /*class Negativer extends Exception{
