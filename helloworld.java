@@ -1,3 +1,131 @@
+//import java.util.*;
+//COLLECTION FRAMEWORK IN JAVA
+//import java.util.*
+
+//1.List: ArrayList, LinkedList, Vector, Stack
+
+//  i............................................... ArrayList
+//Its sizeis dynamically increased as elements are addes into it.
+//we can store variable data types in an arraylist
+ 
+// All collection methods :
+//add(Object o)
+//addAll(Collection c)
+//remove(Object o)
+//removeAll(Collection c)
+//retainAll(Collection c)
+//clear()
+//isEmpty()
+//size()
+//equals(Object o)
+//toArray()
+//contains(Object o)
+//containsAll(Collection c)
+//ArrayList al=new ArrayList();
+//al.size();
+
+//1. //ArrayList methods:
+//get(object o)
+//set(index, object o)
+//add(index, object o)
+//addAll(Collection c)
+//remove(index, object o)
+//removeAll(Collection c)
+
+/*class helloworld{
+    public static void main(String[] args) {
+        ArrayList al=new ArrayList();
+        al.add(10);
+        al.add(63);
+        al.add(7);
+        al.add(3,9);
+        al.add(34);
+        al.remove(2); //insert index not element now new list 10,63,9,34 now 
+        al.remove(3); //now 34 gets removed dont see original list see new list 
+        al.add(234);
+        al.add(45667);
+        al.add(3);
+        System.out.println("The arraylist: "+al);
+        //for(int i:al){
+        //System.out.println(i);
+        //}
+                                    //import java.util.* (Collections)
+        //other important collection methods
+        //binarySearch(list,key)
+        //Collections.sort(list)
+        //Collections.min(list)
+        //Collections.max(list)
+        //Collections.reverse(list)
+        //Collections.shuffle(list)
+        //Collections.swap(list, i, j) //swap value at index i with j
+        //Collections.replaceAll(list,x1,x2) //replace x1 with x2
+        //Collections.fill(list,x1) //fill with element x1
+        //Collections.copy(l2,l1) //list1 gets copied too list2
+
+        Collections.sort(al);
+        System.out.println("The sorted arraylist: "+al);
+        System.out.println(Collections.min(al));
+        System.out.println(Collections.max(al));
+        Collections.reverse(al);
+        System.out.println("The reversed arraylist: "+al);
+        Collections.sort(al); // ***** we must ensure the list is sorted before binary search //
+        /*System.out.println("THE BINARY SEARCH :"+Collections.binarySearch(al, 45667)); //we enter element
+        //Collections.shuffle(al);
+        //System.out.println("The shuffled arraylist: "+al);
+        Collections.swap(al,0, 1);
+        System.out.println("The swapped arraylist: "+al);
+        al.add(45667);
+        Collections.replaceAll(al,45667,8);
+        System.out.println("The replaced arraylist: "+al);
+        //fill copy
+        //1. *************************** fixed size list : ****************************
+        List <Integer> l1=Arrays.asList(1,2,3,4,5); //write whole Integer not int
+        System.out.println("l1 is : "+l1);
+        //l1.add(8); this is an error we cannot add element in this fixed length list
+        //2. *********** fully flxible list *********** its size dynamically increases as new element is added
+        List <Integer> l2=new ArrayList<>(Arrays.asList(1,5,6,23,325,67));
+        l2.add(12345); // here we can do this as its variable length 
+        //to make variable length just add : new ArrayList<>(Array.asList()); on rhs 
+        System.out.println("l2 is : "+l2);
+        List <Integer> l3=Arrays.asList(new Integer [5]); //dont forget to write Integer not int
+        Collections.fill(l3,1); //fills with 1 which was initially l3 is: [null, null, null, null, null]
+        System.out.println("l3 is: "+l3);
+    }
+}*/
+
+// ii.......................................... LINKED LIST
+/*class helloworld{
+    public static void main(String[] args) {
+        LinkedList <String> l1=new LinkedList <String>();
+        l1.add("HELLO");
+        l1.add("WORLD");
+        l1.add("WELCOME");
+        l1.addFirst("FIRST");
+        l1.addLast("LAST");
+        l1.remove(2); //2nd index gets removed
+        l1.removeFirst();
+        l1.removeLast();
+        l1.addLast("THANK");
+        l1.add("YOU");
+        System.out.println("L1 is : "+l1);
+        System.out.println("At 2: "+l1.get(2));
+        System.out.println("At first : "+l1.getFirst());
+        System.out.println("At last : "+l1.getLast());
+        //iterator 
+        ListIterator <String> i1=l1.listIterator(); //for list use listIterator as iterator doesbnt support hasprevious
+        //Iterator <String> i1=l1.iterator(); //but this one doesnt support hasPrevious()
+        while(i1.hasNext()){
+            System.out.println(i1.next());
+        }
+        System.out.println("now previous : ");
+        while(i1.hasPrevious()){
+            System.out.println(i1.previous());
+        }
+    }
+}
+*/
+
+
 //finally block in java
 /*class helloworld{
     public static void main(String[] args) {
