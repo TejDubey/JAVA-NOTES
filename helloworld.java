@@ -135,6 +135,112 @@
 }
 */
 
+// iii. .............................................VECTOR
+//Vector <String> v=new Vector <String>();
+//List<String> syncList = Collections.synchronizedList(new ArrayList<>());
+
+//Thread-Safety
+//Vector is synchronized → thread-safe by default.
+//All major methods (add, remove, get, etc.) are synchronized.
+//Vector <Integer> v=new Vector <Integer>(10); //u may incldue size or not 
+//for (int i = 0; i < v.size(); i++) {
+//    System.out.println(v.get(i));
+//}
+//supports all similar methods add remove first element last element find replace 
+
+/*
+// iv. ...........................................STACK............................................
+//stacks is basically last in first out (LIFO)
+
+7 is last in first out
+2,4,8,9,7 push          7 pop ------: then 9 then 8 ....
+
+|    7      |           |           |        
+|    9      |           |     9     |
+|    8      |           |     8     |
+|    4      |           |     4     |
+|____2______|           |_____2_____|
+
+*//*
+class helloworld{
+    public static void main(String[] args) {
+        Stack <Integer> s1=new Stack <>();
+        s1.push(5);
+        s1.push(2);
+        s1.push(67);
+        s1.push(23);
+        s1.push(95);
+        s1.pop();
+        s1.pop();
+        System.out.println(s1.empty());
+        System.out.println(s1.peek()); //top element                          //   3 2 1 index position
+        System.out.println(s1.search(5)); //search works in index based 1 from top 5 2 27                                                                                              
+        System.out.println(s1.get(0)); //here u put index inside    //starts from bottom element    5 2 17
+        //in search put element whose index starts from 1 and starts from backwards(top)        //  0 1 2...
+        //in get we pass index and it gives the element at index starts from 0 from front(bottom)
+        System.out.println("The stack : "+s1);
+
+    }
+}
+*/
+
+// v. ............................................MAP
+//map methods
+//put(key,value)
+//remove(key)
+//replace(key,value)
+//Get(k key) //used to access value in a hashmap
+//getKey()
+//getValue()
+
+//hashmap
+/*
+class helloworld{
+    public static void main(String[] args) {
+        HashMap <String,Integer> h1=new HashMap<>();
+        h1.put("hello",5);
+        h1.put("worldd",6);
+        h1.put("welcome",7); //values can be same
+        h1.put("to",7); //values can be same only keys to be diffrent
+        h1.put("java",4);
+        h1.put("java",9); //any dublicate value will be overwritten now java will be linked to 9 not 4
+        System.out.println("The hashmap: "+h1);
+
+        //hashmap stores key value pairs without any order /////////////////// IMP
+        //tree map creates a sorted map         /////////////////////////////////////////////// IMP
+        //now TreeMap and LinkedHashMap
+        TreeMap <String,Integer> t1=new TreeMap<>(h1); //MAP is interface TreeMap is concrete class
+        //Map <String,Integer> t1=new TreeMap<>(h1); both are same
+        System.out.println("t1 is: "+t1);
+
+        //LinkedHashMap
+        //LinkedHashMap <String,Integer> lh1=new LinkedHashMap<>(t1);
+        //or
+        //Map <String,Integer> lh1=new LinkedHashMap<>(t1);
+        //System.out.println("lh1 is : "+lh1);
+
+        //keySet values get put
+        LinkedHashMap <Integer,String> lh1=new LinkedHashMap<>();
+        lh1.put(1,"one");
+        lh1.put(2,"two");
+        lh1.put(3,"three");
+        lh1.put(4,"four");
+        lh1.put(1,"oneeeeeee");
+        System.out.println("lh1 is: "+lh1);
+        System.out.println(lh1.get(3)); //insert key
+
+        //---------------
+        //System.out.println(lh1.getKey("four")); //error : this doesnt work as only map contains these funcs 
+        //linkedhashmap and treemap doesnt contain these functions
+        //System.out.println(lh1.getValue(3));//error
+        //---------------
+        System.out.println(lh1.keySet()); //valid
+        System.out.println(lh1.values()); //valid 
+    }
+}
+*/
+
+//----------------------------------------------------------------------------------------------------------------//
 
 //finally block in java
 /*class helloworld{
@@ -157,6 +263,7 @@
     }
 }
 */
+
 
 //throw and throwss in java
 /*class Negativer extends Exception{
