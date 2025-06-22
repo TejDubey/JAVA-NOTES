@@ -93,6 +93,16 @@
     }
 }*/
 
+//ArrayList is a concrete class where as List is an interface.........................
+// 1. ArrayList <Integer> l1=new ArrayList <Integer>();  //variable size l1.add().. we can add remove modify
+// 2. ArrayList <Integer> l1=new ArrayList <Integer>(Arrays.asList(1,2,3,4,5)); //fixed size l1.add().. we can add remove modify
+// 3. List <Integer> l1=Arrays.asList(1,2,3,4,5);  //fixed length list we cant add more elements or remove only modify
+// 4. List <Integer> l1=Arrays.asList(new Integer [5]); //creates an list with 5 null values
+
+//List<String> list = new ArrayList<>();
+// Later, you can switch to:
+//list = new LinkedList<>();
+
 // ii.......................................... LINKED LIST
 /*class helloworld{
     public static void main(String[] args) {
