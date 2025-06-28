@@ -1180,3 +1180,109 @@ public class helloworld {
 }
 
 */
+
+
+//IMPORTANT ADDITIONAL THINGS FROM QUESTION PRACTICE HACKERRANK
+//JAVA REGEX
+//Q. JAVA STRING TOKENS SPLIT THE GIVEN SENTNCE TO TOKENS
+//import java.io.*;
+//import java.util.*;
+/*
+Regex Components Cheat Sheet
+Pattern	Meaning
+.           Any character
+\d	        Digit [0-9]
+\D	        Non-digit
+\w	        Word character [a-zA-Z0-9_]
+\W	        Non-word character
+\s	        Whitespace
+[abc]	    a or b or c
+[^abc]	    Not a or b or c
+[a-z]	    a to z
+a*	        0 or more a
+a+	        1 or more a
+a?	        0 or 1 a
+a{3}	    Exactly 3 as
+a{2,4}	    2 to 4 as
+^	        Start of line
+$	        End of line
+()          Captures the regex as a group
+Use double backslashes (\\) in Java strings because \ is an escape character in Java.
+
+Q. To validate string length 8-30 with first letter as alphabet and then followed by a word i.e [a-zA-Z0-9]
+regularExpression = "^[A-Za-z]\\w{7,29}$";
+
+*********************Useful Methods*****************
+Pattern.matches(regex, input)
+Pattern.compile(regex)
+matcher.find(), matcher.group(), matcher.start(), matcher.end()
+String.split(regex)
+String.replaceAll(regex, replacement)
+****************************************************
+*/
+
+/*
+public class helloworld {
+
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        String s = scan.nextLine().trim();
+        String [] spltd = s.split("[^a-zA-Z]+");
+        scan.close();
+        
+        if (s.isEmpty()) {
+            System.out.println(0); //printing length
+            return;
+        }
+        
+        System.out.println(spltd.length);
+        
+        for(int i=0;i<spltd.length;i++){
+            System.out.println(spltd[i]);
+        }
+    }
+}
+*/
+/*
+//pattern match regex
+import java.util.regex.*;
+
+public class Main {
+    public static void main(String[] args) {
+        String text = "hello123";
+        String pattern = "[a-z]+\\d+";  // one or more lowercase letters followed by digits
+
+        if (Pattern.matches(pattern, text)) {
+            System.out.println("Match found!");
+        } else {
+            System.out.println("No match.");
+        }
+    }
+}
+
+////Pattern.compile().................x
+import java.util.Scanner;
+import java.util.regex.*;
+
+public class Solution
+{
+	public static void main(String[] args){
+		Scanner in = new Scanner(System.in);
+		int testCases = Integer.parseInt(in.nextLine());
+		while(testCases>0){
+			String pattern = in.nextLine();
+          	//Write your code
+            try{
+                Pattern.compile(pattern);
+                System.out.println("Valid");
+            }
+            catch(Exception e){
+                System.out.println("Invalid");
+            }
+            testCases--;
+		}
+	}
+}
+
+
+*/
